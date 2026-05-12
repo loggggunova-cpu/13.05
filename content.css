@@ -1,0 +1,435 @@
+*{ box-sizing: border-box;}
+html, body{ 
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight'; }
+
+
+.menubar{
+position: fixed;
+top: 1vw;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1000;
+width: min(98vw, 980px);
+min-height: 56px;
+padding: 12px 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 24px;
+border-radius: 999px;
+background: rgba(251, 251, 251, 0.92);
+box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+backdrop-filter: blur(12px);
+}
+
+.menu{
+position: relative;
+/* display: flex; */
+display: none;
+}
+
+.list_container{
+position: relative;
+display: flex;
+}
+
+.li-list{
+position: relative;
+display: flex;
+gap: 1vw;
+margin: 0 1vw;
+}
+
+.li-list > li > a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+}
+
+form{
+ position: relative;
+ width: 30vw;
+ margin: 1vw auto;
+}
+
+input[type="text"], input[type="date"], input[type="email"],
+input[type="number"],select {
+padding: 0.2vw 1vw;
+font-size: 1vw;
+color: rgb(101, 101, 101);
+margin: 0.4vw auto;
+border-radius: 0.2vw;
+border: none;
+}
+
+form > p, form > h3, form > span{
+    font-size: 1.2vw;
+    color: rgb(36, 36 , 36);
+    margin-top:  0.6vw;
+    
+}
+
+.tut:hover{
+ text-decoration: underline;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+button{
+    font-size: 1.2vw;
+    line-height: 1.4vw;
+    font-weight: 600;
+    background: navy;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.2vw 1vw;
+    text-align: center;
+    border: none;
+    border-radius: 2vw;
+}
+
+button > a{
+color: aliceblue;
+text-decoration: none;
+font-size: 1vw;
+}
+
+.flexim{ display: flex;}
+
+.first_banner{
+position: relative;
+background: black;
+width: 100vw;
+height: 20vw;
+margin-top: 1vw;
+color: aliceblue;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 20vw;
+font-size: 4vw;
+overflow: hidden;
+}
+
+ .color-block{
+ position: absolute;
+ width: 100vw;
+ height: 20vw;
+ }
+
+
+.color-block{
+position: absolute;  
+width: 10vw;  
+height: 10vw;
+margin-top:  1vw;
+color: aliceblue;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+line-height: 20vw;
+font-size: 4vw;
+overflow: hidden;
+}
+
+.color{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    filter: blur(140px);
+}
+
+.c10{
+    background: red;
+    animation: redy 12s linear infinite;
+}
+
+.c11{
+    background: rgb (0, 128, 255);
+    animation: by 12s linear infinite;
+}
+
+.c12{
+    background: rgb(0, 255, 8);
+    animation: gry 12s linear infinite
+}
+
+.c13{
+    background: rgb( 255, 217, 0);
+     animation: yey 12s linear infinite
+}
+
+@keyframes redy{
+    0% { top: 10% ; left: 80%;}
+    50% { top: 60% ; left: 20%;}
+    100% { top: 10% ; left: 80%}
+    
+}
+
+
+
+
+  table{
+    margin-top: 1vw;
+    overflow: hidden;
+}
+
+table {
+    width: 94%;
+    position: relative;
+    margin-left: 3%;
+    border-collapse: collapse;
+    font-size: 1vw;
+    background: rgb(255, 255, 255);
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+
+    .new_row{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 1vw;
+}
+
+th, td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 0.5vw;
+}
+
+th{
+    color: #999;
+}
+
+th:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
+td > span {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 8px;  /* исправлено: убран пробел */
+    margin: 0 4px 4px 0;
+}
+
+.sp_red{
+    background: rgb(158, 87, 87);
+}
+
+.sp_green{
+    background: rgb(112, 255, 158);
+}
+
+.avocado_button{
+    color: black;
+    width: 4vw;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+}
+
+.avocado_button:hover{
+    background-color: rgb(180, 42, 157);
+    color: #eee;
+}
+
+input[type="text"] {
+    width: 10vw;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border: none;
+    outline: none;
+}
+
+input[name="name_off"]{
+    width: 28vw;
+}
+
+input[name="date"]{
+    outline: none;
+    width: 18vw;
+}
+
+select[name="type"]{
+    width: 16vw;
+}
+
+
+
+
+
+
+body{
+    padding-top: 86px;
+}
+
+.menubar > a,
+.menubar > div:last-child{
+    display: none;
+}
+
+.list_container{
+    width: 100%;
+    justify-content: center;
+}
+
+.li-list{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 0;
+    list-style: none;
+}
+
+.li-list > li > a{
+    display: inline-block;
+    font-size: clamp(15px, 1.2vw, 20px);
+    line-height: 1;
+    padding: 8px 4px;
+}
+
+.book-page{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'CarlaSansLight', Arial, sans-serif;
+    padding-top: 0;
+}
+
+.book-page .logo{
+    position: fixed;
+    left: 1.5em;
+    top: 86px;
+    z-index: 10;
+}
+
+.book-page .logo a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.book-page .sidebar{
+    position: fixed;
+    left: 1.5em;
+    bottom: 2em;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.book-page p#header{
+    text-transform: uppercase;
+    font-size: clamp(3.5rem, 9vw, 7.5rem);
+    line-height: 85%;
+}
+
+.book-page .slider{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+}
+
+.book-page .slider:active{
+    cursor: grabbing;
+}
+
+.book-page .slider-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    min-width: 100vw;
+    height: 100%;
+    padding: 0 max(140px, 35vw);
+    display: flex;
+    align-items: center;
+    gap: clamp(32px, 6vw, 100px);
+    will-change: transform;
+}
+
+.book-page .slide{
+    flex: 0 0 auto;
+    width: clamp(220px, 28vw, 400px);
+    height: clamp(320px, 52vh, 500px);
+    background: #e3e3e3;
+    border-radius: 18px;
+    overflow: hidden;
+    transform-origin: center center;
+    transition: transform 0.18s linear;
+}
+
+.book-page .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 720px){
+    body{ padding-top: 104px; }
+
+    .menubar{
+        top: 10px;
+        width: calc(100vw - 20px);
+        min-height: auto;
+        padding: 12px 14px;
+    }
+
+    .li-list{
+        gap: 8px 14px;
+    }
+
+    .li-list > li > a{
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    form{
+        width: 90vw;
+    }
+
+    input[type="text"], input[type="date"], input[type="email"], input[type="number"], select,
+    input[name="name_off"], input[name="date"], select[name="type"]{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    form > p, form > h3, form > span{
+        font-size: 16px;
+    }
+
+    .book-page .logo{
+        top: 100px;
+        left: 16px;
+    }
+
+    .book-page .sidebar{
+        left: 16px;
+        bottom: 18px;
+    }
+
+    .book-page .slider-wrapper{
+        padding: 0 24vw;
+    }
+}
